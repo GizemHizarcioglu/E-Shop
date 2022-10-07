@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <title>Store Kayıt Sayfası</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <main>
+      <header class="page-header">
+        <h1 class="h1">Jewelery Store</h1>
+        <img class="logo" src="assets/images/logo.png" />
+        <nav class="navigation-menu">
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="login.html">Giriş Yap</a></li>
+            <li><a href="register.html">Kayıt Ol</a></li>
+            <li><a href="checkout.html">Ödeme Sayfası</a></li>
+            <li><a href="success.html">Ödeme Başarılı!</a></li>
+          </ul>
+        </nav>
+        </header>
+
+        <body>
+          <main>
+
+            <body>
+              <main>
+                <header class="register-header">
+                  <h1 class="register-h1">Kayıt Sayfası</h1>
+                  <p class="register-message">
+                    Kaydolmak için lütfen aşağıdaki formu doldurunuz. </p>
+                </header>
+          
+                <form class="register-form">
+                  <h2 class="register-h2">Kayıt Bilgileri</h2>
+  
+                  <div class="register-inputs">
+
+                  <div class="register-input">
+                    <label for="name">İsim:</label>
+                    <input type="text" id="name" placeholder="İsim" pattern="[A-Za-z]{2,}" required autofocus />
+                  </div>
+
+                  <div class="register-input">
+                    <label for="surname">Soyisim:</label>
+                    <input type="text" id="surname" placeholder="Soyisim"  />
+                  </div>
+
+                  <div class="register-input">
+                  <label for="phone">Telefon:</label>
+                  <input type="tel" id="phone" placeholder="Telefon numaranızı 0 ile başlayarak 11 haneli olarak yazınız" minlength="11" maxlength="11" required/>
+                  </div>
+                  
+                  <div class="register-input">
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" placeholder="you@example.com" required />
+                  </div>
+  
+                  <div class="register-input">
+                  <label for="password">Şifre:</label>
+                  <input type="password" id="password" minlength="8" required />
+                  </div>
+                </div>
+  
+                <div class="register-button">
+                  <button class="register-button1" type="submit" >Kaydol!</button>
+                </div>
+
+                <div class="register-consent">
+                <input type="checkbox" id="sms" />
+                <label for="sms"> Kampanyalardan haberdar olmak için sms gönderimini onaylıyorum. </label>
+                </div>
+                <div class="register-consent">
+                <input type="checkbox" id="emailCheckbox" />
+                <label for="emailCheckbox"> Kampanyalardan haberdar olmak için e-posta gönderimini onaylıyorum. </label>
+                </div>
+
+                </form>
+              </main>
+
+        <footer class="page-footer">
+            <p class="follow-us">Bizi takip edin!</p>
+            <div class="social-media1"> 
+            <li><a href="#" class="icon-thumbnail fab fa-instagram"></a></li>
+            <li><p class="instagram-address">@jewellerystore</p></li>
+            </div>
+            <div class="social-media2">
+            <a href="#" class="fab fa-twitter"></a>
+            <li><p class="twitter-address">@jewellerystore</p></li>
+            </div>
+            
+        </footer>
+      </main>
+    </body>
+</html>

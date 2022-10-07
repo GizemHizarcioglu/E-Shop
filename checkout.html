@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <title>Store Ödeme Sayfası</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <main>
+      <header class="page-header">
+        <h1 class="h1">Jewelery Store</h1>
+        <img class="logo" src="assets/images/logo.png" />
+        <nav class="navigation-menu">
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="login.html">Giriş Yap</a></li>
+            <li><a href="register.html">Kayıt Ol</a></li>
+            <li><a href="checkout.html">Ödeme Sayfası</a></li>
+            <li><a href="success.html">Ödeme Başarılı!</a></li>
+          </ul>
+        </nav>
+        </header>
+        <body>
+            <main>
+              <header class="checkout-header">
+                <h1 class="checkout-h1">Ödeme Sayfası</h1>
+                <p class="checkout-p">
+                  Lütfen teslimat ve ödeme bilgilerini giriniz.
+                </p>
+              </header>
+        
+              <form class="checkout-form">
+                <h2>Fatura Adresi</h2>
+        
+                <div class="checkout-input">
+                  <label for="Name">İsim</label>
+                  <input type="text" id="Name" placeholder="İsim" required />
+                </div>
+
+                <div class="checkout-input">
+                  <label for="Surname">Soyisim</label>
+                  <input type="text" id="Surname" placeholder="Soyisim" required />
+                </div>
+      
+                <div class="checkout-input">
+                  <label for="email">E-posta</label>
+                  <input type="email" id="email" placeholder="you@example.com" required />
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="address">Adres</label>
+                  <input type="text" id="address" placeholder="Mahalle, Sokak, Bina No, Daire No" required />
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="city">Şehir</label>
+                  <select id="city" required>
+                    <option value="">Şehir seçiniz</option>
+                    <option>İstanbul</option>
+                    <option>Ankara</option>
+                    <option>İzmir</option>
+                  </select>
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="county">İlçe</label>
+                  <select id="county" required>
+                    <option value="">Seçiniz</option>
+                    <option>Beşiktaş</option>
+                    <option>Kadıköy</option>
+                    <option>Üsküdar</option>
+                    <option>Çankaya</option>
+                    <option>Keçiören</option>
+                    <option>Etimesgut</option>
+                    <option>Karşıyaka</option>
+                    <option>Narlıdere</option>
+                    <option>Bornova</option>
+                  </select>
+                </div>
+        
+                <div>
+                  <input type="checkbox" id="same-address" />
+                  <label for="same-address">Fatura adresi ile teslimat adresi aynı</label>
+                </div>
+      
+                <h2>Ödeme Bilgileri</h2>
+        
+                <div class="radio-group">
+                  <div class="checkout-radio">
+                    <input id="credit" name="paymentMethod" type="radio" required />
+                    <label for="credit">Kredi Kartı</label>
+                  </div>
+        
+                  <div class="checkout-radio">
+                    <input id="debit" name="paymentMethod" type="radio" required />
+                    <label for="debit">Banka Kartı</label>
+                  </div>
+        
+                  <div class="checkout-radio">
+                    <input id="paypal" name="paymentMethod" type="radio" required />
+                    <label for="paypal">Havale/EFT</label>
+                  </div>
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="cardNumber">Kart Numarası</label>
+                  <input type="text" id="cardNumber" required />
+                </div>
+
+                <div class="checkout-input">
+                  <label for="nameOnCard">Kart Üzerindeki İsim</label>
+                  <input type="text" id="nameOnCard" required />
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="expDate">Son Kullanma Tarihi</label>
+                  <input type="text" id="expDate" required />
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" placeholder="Kartın arkasında bulunan numarayı giriniz." required />
+                </div>
+
+                      <div class="checkout-installments">
+                        <h3>Taksit Seçenekleri</h3>
+                        <div class="checkout-radio">
+                        <input id="installments" name="installmentsOption1" type="radio" />
+                        <label for="installments">Peşin Ödeme</label>
+
+
+                        <div class="checkout-radio">
+                        <input id="installments" name="installmentsOption2" type="radio" />
+                        <label for="installments">3 Taksit</label>
+
+ 
+                        <div class="checkout-radio">
+                        <input id="installments" name="installmentsOption3" type="radio" />
+                        <label for="installments">6 Taksit</label>
+
+                        <div class="checkout-radio">
+                        <input id="installments" name="installmentsOption4" type="radio" />
+                        <label for="installments">9 Taksit</label>
+                        </div>
+                      </div>
+
+                      <div class="checkout-checkbox">
+                        <input type="checkbox" id="save-info" />
+                        <label for="save-info">Kart Bilgierimi Kaydet</label>
+                      </div>
+        
+                <button class="checkout-button" type="submit">Ödeme tamamlandı</button>
+              </form>
+            </main>
+          </body>
+        
+
+        <footer class="page-footer">
+            <p class="follow-us">Bizi takip edin!</p>
+            <div class="social-media1"> 
+            <li><a href="#" class="icon-thumbnail fab fa-instagram"></a></li>
+            <li><p class="instagram-address">@jewellerystore</p></li>
+            </div>
+            <div class="social-media2">
+            <a href="#" class="fab fa-twitter"></a>
+            <li><p class="twitter-address">@jewellerystore</p></li>
+            </div>
+            
+        </footer>
+      </main>
+    </body>
+</html>
